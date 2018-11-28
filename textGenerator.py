@@ -5,7 +5,7 @@ def wordListSum(wordList):
     sum = 0
     for word, value in wordList.items():
         sum += value
-    return = sum
+    return sum
 
 def retreieveRandomWord(wordList):
     randIndex = randint(1, wordListSum(wordList))
@@ -17,7 +17,7 @@ def retreieveRandomWord(wordList):
 def buildWordDict(text):
     #remove new lines and double quotations
     text = text.replace("\n", " ")
-    text = text.replace("\""), "")
+    text = text.replace("\"", "")
 
     #check whether symbols are included in markov chain
     punctuation = [',' , '.', ';', ':']
@@ -39,8 +39,8 @@ def buildWordDict(text):
 
     return wordDict
 
-text = str(urlopen(http://pythonscraping.com/files/inaugrationSpeech.txt)
-            .read(), 'utf-8')
+text = str(urlopen("http://pythonscraping.com/files/inaugurationSpeech.txt")\
+        .read(), 'utf-8')
 
 wordDict = buildWordDict(text)
 
